@@ -38,6 +38,15 @@ Create a traffic light system:
 
 ## Unit Tests
 
+### Validate CarModel
+
+- cover the cases:
+    - `CarModel` is empty ==> invalid
+    - length of `CarModel` < 3 ==> invalid
+    - length of `CarModel` >= 3 ==> valid
+
+### Light Traffic
+
 - cover the cases above:
     - [1...4] -> `RED LIGHT`
     - [5...8] -> `GREEN LIGHT`

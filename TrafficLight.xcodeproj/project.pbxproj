@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		699E0E9A2A45BDD300BA69D7 /* CarViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699E0E992A45BDD300BA69D7 /* CarViewModelTests.swift */; };
 		69D5F8B72A433A2A00EE8537 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D5F8B62A433A2A00EE8537 /* AppDelegate.swift */; };
 		69D5F8BB2A433A2A00EE8537 /* CarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D5F8BA2A433A2A00EE8537 /* CarViewController.swift */; };
 		69D5F8C02A433A2D00EE8537 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69D5F8BF2A433A2D00EE8537 /* Assets.xcassets */; };
@@ -49,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		699E0E992A45BDD300BA69D7 /* CarViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewModelTests.swift; sourceTree = "<group>"; };
 		69D5F8B32A433A2A00EE8537 /* TrafficLight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrafficLight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69D5F8B62A433A2A00EE8537 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69D5F8BA2A433A2A00EE8537 /* CarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewController.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				69D5F90D2A45AEF300EE8537 /* TrafficLightViewModelTests.swift */,
+				699E0E992A45BDD300BA69D7 /* CarViewModelTests.swift */,
 			);
 			path = TrafficLightTests;
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				69D5F90E2A45AEF300EE8537 /* TrafficLightViewModelTests.swift in Sources */,
+				699E0E9A2A45BDD300BA69D7 /* CarViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
