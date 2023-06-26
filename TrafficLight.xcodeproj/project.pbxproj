@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		699E0E9A2A45BDD300BA69D7 /* CarViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699E0E992A45BDD300BA69D7 /* CarViewModelTests.swift */; };
+		699E0E9C2A497F4E00BA69D7 /* CarViewController+Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699E0E9B2A497F4E00BA69D7 /* CarViewController+Events.swift */; };
 		69D5F8B72A433A2A00EE8537 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D5F8B62A433A2A00EE8537 /* AppDelegate.swift */; };
-		69D5F8BB2A433A2A00EE8537 /* CarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D5F8BA2A433A2A00EE8537 /* CarViewController.swift */; };
+		69D5F8BB2A433A2A00EE8537 /* CarViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D5F8BA2A433A2A00EE8537 /* CarViewController+UI.swift */; };
 		69D5F8C02A433A2D00EE8537 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69D5F8BF2A433A2D00EE8537 /* Assets.xcassets */; };
 		69D5F8C32A433A2D00EE8537 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69D5F8C12A433A2D00EE8537 /* LaunchScreen.storyboard */; };
 		69D5F8D82A433A2D00EE8537 /* TrafficLightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D5F8D72A433A2D00EE8537 /* TrafficLightUITests.swift */; };
@@ -51,9 +52,10 @@
 
 /* Begin PBXFileReference section */
 		699E0E992A45BDD300BA69D7 /* CarViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewModelTests.swift; sourceTree = "<group>"; };
+		699E0E9B2A497F4E00BA69D7 /* CarViewController+Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CarViewController+Events.swift"; sourceTree = "<group>"; };
 		69D5F8B32A433A2A00EE8537 /* TrafficLight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrafficLight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69D5F8B62A433A2A00EE8537 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		69D5F8BA2A433A2A00EE8537 /* CarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewController.swift; sourceTree = "<group>"; };
+		69D5F8BA2A433A2A00EE8537 /* CarViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CarViewController+UI.swift"; sourceTree = "<group>"; };
 		69D5F8BF2A433A2D00EE8537 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69D5F8C22A433A2D00EE8537 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69D5F8C42A433A2D00EE8537 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -160,7 +162,8 @@
 		69D5F8E62A43783F00EE8537 /* Screen1 */ = {
 			isa = PBXGroup;
 			children = (
-				69D5F8BA2A433A2A00EE8537 /* CarViewController.swift */,
+				69D5F8BA2A433A2A00EE8537 /* CarViewController+UI.swift */,
+				699E0E9B2A497F4E00BA69D7 /* CarViewController+Events.swift */,
 				69D5F8EA2A4378FA00EE8537 /* CarViewModel.swift */,
 				69D5F8EC2A437BD200EE8537 /* CarCoordinator.swift */,
 			);
@@ -359,11 +362,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				69D5F8F92A43942F00EE8537 /* CircleView.swift in Sources */,
-				69D5F8BB2A433A2A00EE8537 /* CarViewController.swift in Sources */,
+				69D5F8BB2A433A2A00EE8537 /* CarViewController+UI.swift in Sources */,
 				69D5F8F02A437F0400EE8537 /* TrafficLightViewController+UI.swift in Sources */,
 				69D5F8ED2A437BD200EE8537 /* CarCoordinator.swift in Sources */,
 				69D5F9012A4483B500EE8537 /* TimeMonitorUsingTimer.swift in Sources */,
 				69D5F90C2A45A6BD00EE8537 /* TrafficLightViewController+Observers.swift in Sources */,
+				699E0E9C2A497F4E00BA69D7 /* CarViewController+Events.swift in Sources */,
 				69D5F8EB2A4378FA00EE8537 /* CarViewModel.swift in Sources */,
 				69D5F9032A4483E200EE8537 /* TimeMonitorUsingDispatchQueue.swift in Sources */,
 				69D5F8FE2A446BE900EE8537 /* TimeMonitor.swift in Sources */,

@@ -27,7 +27,7 @@ final class TrafficLightCoordinator {
         let lightProperties = [
             redLightProperty,
             greenLightProperty,
-            orangeLightProperty
+            orangeLightProperty            
         ]
         
         let timeMonitor: TimeMonitoring

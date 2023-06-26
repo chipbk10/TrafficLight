@@ -31,3 +31,10 @@ let orangeLightProperty: LightProperty = (
 )
 
 let grayColor: RGB = (red: 237/255, green: 237/255, blue: 237/255, alpha: 1.0)
+
+/// Add more colors if we want
+let purpleLightProperty: LightProperty = (
+    activeRGB: (red: 140/255, green: 112/255, blue: 255/255, alpha: 1.0),
+    inactiveRGB: (red: 140/255, green: 112/255, blue: 255/255, alpha: 0.5),
+    time: 3
+)

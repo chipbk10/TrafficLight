@@ -14,7 +14,7 @@ final class TrafficLightViewModel {
     /// either use observer & listener approach
     /// or use reactive approach (like RxSwift, Combine)
     var currentIndex: Observable<Int> = Observable(0)
-    var currentSecond: Observable<Int> = Observable(0)
+    var currentSecond: Observable<Int> = Observable(1)
     
     // MARK: - Private Properties
     

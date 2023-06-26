@@ -39,7 +39,7 @@ final class CarViewController: UIViewController {
         return stackView
     }()
     
-    private lazy var warningLabelView: UILabel = {
+    lazy var warningLabelView: UILabel = {
         let label = UILabel()
         label.textColor = .red
         containerView.addArrangedSubview(label)
@@ -53,7 +53,7 @@ final class CarViewController: UIViewController {
         return label
     }()
     
-    private lazy var textView: UITextView = {
+    lazy var textView: UITextView = {
         let textView = UITextView()
         textView.isScrollEnabled = false
         textView.textContainer.maximumNumberOfLines = 1
@@ -81,10 +81,10 @@ final class CarViewController: UIViewController {
         return button
     }()
     
-    // MARK: - Private Properties
+    // MARK: - Properties
     
-    private let viewModel: CarViewModel
-    private let completion: (String) -> Void
+    let viewModel: CarViewModel
+    let completion: (String) -> Void
     
     // MARK: - Inits
     
@@ -114,23 +114,5 @@ final class CarViewController: UIViewController {
         textView.delegate = self
         button.setTitle("Start Driving", for: .normal)
         button.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
-    }
-    
-    private func updateWarningLabelView() {
-        warningLabelView.text = viewModel.isValid(carModel: textView.text) ? "" : viewModel.invalidCarModelMessage
-    }
-}
-
-// MARK: - Events
-
-extension CarViewController: UITextViewDelegate {
-    
-    func textViewDidChange(_ textView: UITextView) {
-        updateWarningLabelView()
-    }
-    
-    @objc func didTapButton() {
-        guard viewModel.isValid(carModel: textView.text) else { return }
-        completion(textView.text)
     }
 }
