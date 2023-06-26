@@ -10,7 +10,6 @@ import UIKit
 extension TrafficLightViewController {
     
     func start() {
-        
         // using UIView.animate approach
         viewModel.currentIndex.removeObserver()
         startAnimateLightView(atIndex: 0)

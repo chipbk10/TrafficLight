@@ -31,8 +31,8 @@ final class TrafficLightCoordinator {
         ]
         
         let timeMonitor: TimeMonitoring
-                 = TimeMonitorUsingTimer()
-                // = TimeMonitorUsingDispatchQueue()
+                // = TimeMonitorUsingTimer()
+                 = TimeMonitorUsingDispatchQueue()
                 // = TimerMonitorUsingCombine()
         
         let viewModel = TrafficLightViewModel(

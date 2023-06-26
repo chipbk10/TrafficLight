@@ -43,6 +43,8 @@ final class TrafficLightViewModel {
     func stop() {
         print("Stop Traffic Light")
         timeMonitor.stop()
+        currentSecond.value = 1
+        currentIndex.value = 0
     }
     
     func next(currentIndex: Int) -> Int {

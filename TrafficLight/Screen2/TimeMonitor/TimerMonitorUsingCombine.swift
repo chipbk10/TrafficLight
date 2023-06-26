@@ -33,5 +33,6 @@ final class TimerMonitorUsingCombine: TimeMonitoring {
     
     func stop() {
         publisher?.cancel()
+        currentTime = 0
     }
 }

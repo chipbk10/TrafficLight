@@ -28,6 +28,7 @@ final class TimeMonitorUsingDispatchQueue: TimeMonitoring {
     
     func stop() {
         shouldStop = true
+        currentTime = 0
     }
     
     // MARK: - Private Methods
